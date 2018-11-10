@@ -1,8 +1,7 @@
-import random
-import paho.mqtt.client as mqtt
-import time
-import serial
 import threading
+
+import paho.mqtt.client as mqtt
+import serial
 
 total_lights=60
 
