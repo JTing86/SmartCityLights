@@ -24,7 +24,7 @@ void loop() {
 
   while (Serial.available() != 0) {
     for (int i=0;i<60;i++){
-      input_bytes[60] = Serial.read();
+      input_bytes[60] = Serial.parseInt();
     }
     turn_on_led_chain(input_bytes);
   }     
