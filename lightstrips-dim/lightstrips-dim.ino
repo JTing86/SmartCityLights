@@ -6,7 +6,7 @@
 #define PIN 6 //PIN connected on arduino
 #define num_leds 23
 
-int len = 60;
+int len = 6;
 //int input_bytes[6] = {};
 String input;
 
@@ -30,7 +30,7 @@ void loop() {
   while (Serial.available() != 0) {
     input = Serial.readString();
     turn_on_led_chain(input);
-  }
+  } 
 }
 
 void turn_on_led(int n){
